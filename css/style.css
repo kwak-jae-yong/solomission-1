@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Yatra+One&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Carrois Gothic", serif;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.rel {
+    height: 100%;
+    width: 1560px;
+    margin: auto;
+    position: relative;
+
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    z-index: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+
+
+}
+
+header .nav_l li a:hover {
+    border-bottom: 3px solid black;
+    transition: all .5s ease-in-out;
+
+}
+
+header .rel {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+
+
+}
+
+.rel h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    
+    cursor: pointer;
+
+}
+
+
+
+nav {
+    gap: 10px;
+}
+
+.nav_l {
+    gap: 50px;
+
+}
+
+.nav_l a {
+    text-transform: capitalize;
+    display: block;
+    color: black;
+    font-weight: 400px;
+}
+
+nav,
+.nav_l {
+    display: flex;
+
+}
+
+.hero {
+    background: rgb(44,117,217);
+background: linear-gradient(140deg, rgba(44,117,217,1) 0%, rgba(42,106,198,1) 16%, rgba(40,99,185,1) 27%, rgba(38,92,173,1) 37%, rgba(36,82,157,1) 51%, rgba(33,66,129,1) 75%, rgba(29,49,99,1) 100%);
+}
+
+.hero .rel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tit_wrap {
+    gap: 35px;
+}
+
+.hero .rel .tit_wrap {
+    position: relative;
+}
+
+.hero .rel .tit_wrap p {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.hero .tit_wrap h2 {
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+.rel h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 100%;
+    left: -100px;
+    top: -100px;
+    z-index: -1;
+
+}
+.hero_btn:hover {
+    background-color: black;
+    color: white;
+    transform: translate(0);
+    transition: all .3s ease-in-out;
+
+
+}
+
+.hero_btn {
+    margin-top: 35px;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 60px;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+
+.nav_btn {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 23px;
+    box-shadow: 0 0 10px rgb(128, 128, 128);
+}
+
+.nav_btn span {
+    display: block;
+    width: 100%;
+    background-color: black;
+    font-size: 0;
+    height: 3px;
+    position: absolute;
+}
+
+.nav_btn span:nth-child(1) {
+    top: 0;
+}
+
+.nav_btn span:nth-child(2) {
+    top: calc(50% - 1.5px);
+}
+
+.nav_btn span:nth-child(3) {
+    top: calc(100% - 3px);
+}
+
+
+.img_wrap {
+    position: relative;
+    transform: translateX(90px);
+}
+.rel .img_wrap::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    border-radius: 100%;
+    right: -300px;
+    top: -300px;
+    z-index: -1;
+
+}
+
+.tit_wrap a {
+    color: black;
+    font-size: 25px;
+}
+
+.tit_wrap a.btn {
+
+    border: 5px solid black;
+    padding: 5px;
+    border-radius: 30px;
+    line-height: 49px;
+    width: 176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+
+}
+
+.card {
+    width: 230px;
+    height: 400px;
+
+}
+
+.card_wrap {
+    display: flex;
+    gap: 50px;
+}
+
+.card a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    padding: 0 43px 62px 26px;
+    border-radius: 30px;
+
+    transition: all .5s ease-in-out;
+}
+
+.card a:hover {
+    transform: translateY(30px);
+    transition: all .5s ease-in-out;
+
+}
+
+.card2,
+.card4 {
+    transform: translateY(-30px);
+
+}
+
+.card1 a {
+    background-image: url(../img/card_01.png);
+}
+
+.card2 a {
+    background-image: url(../img/card_02.png);
+
+}
+
+.card3 a {
+    background-image: url(../img/card_03.png);
+}
+
+.card4 a {
+    background-image: url(../img/card_04.png);
+
+}
+
+.card t_wrap p.txt {
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card t_wrap h4 {
+    margin: 7px 0 14px;
+}
+
+.card .arr_wrap {
+    text-align: right;
+}
+
+.card_arr {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 0;
+    box-shadow: 0 0 4px gba(0, 0, 0, 0.25);
+    top: calc(50% - 20px);
+
+}
+
+
+.card_arr.left:hover,
+.card_arr.right:hover {
+    box-shadow: 5px 5px 1px black;
+
+
+}
+
+.card_arr.left {
+    left: -60px;
+    background: url(../img/card-arr-prev.png) no-repeat center/18px #ffff;
+    transition: all .5s ease-in-out;
+}
+
+
+
+
+.card_arr.right {
+    right: -60px;
+    background: url(../img/card-arr-next.png) no-repeat center/18px #ffff;
+    transition: all .5s ease-in-out;
+}
