@@ -1,3 +1,186 @@
-@media  screen and (max-width:1800px){
+@media screen and (max-width:1850px) {
+    html{
+        font-size: 62.5%;
+    }
+.hero .img_wrap{
+    transform: translateX(-5rem);
+    width: auto;
+}
+header .rel,
+.rel{
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+    .rel .img_wrap:before {
+        display: none;
+    }
+
+    nav{
+        gap:5rem;
+    }
+   
+
     
+
+    .hero .img_wrap .card.card4{
+        display: none;
+    }
+.hero .rel .tit_wrap{
+    left: 1rem;
+}
+    .hero .rel .tit_wrap p {
+       font-size:1.5rem;
+    }
+
+    .hero .rel .tit_wrap h2 {
+        font-size: 7rem;
+    }
+.hero .rel .card{
+    transform: translateX(-5rem);
+  
+}
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:1600px) {
+.hero .rel{
+    justify-content: space-around;
+}
+.hero .rel .tit_wrap h2{
+font-size: 5rem;
+}
+.card {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 1.5rem;
+}
+.hero .hero_btn{
+    font-size: 2rem;
+    
+}
+nav{
+    padding-left: 5rem;
+}
+}
+
+@media screen and (max-width:1270px) {
+
+   
+    .hero .rel {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10rem;
+    }
+    
+    .nav_list{
+        display: none;
+    }
+    .hero .img_wrap {
+        transform: translateX(0);
+    }
+.tit_wrap p{
+    margin-top: 1rem;
+}
+
+
+.rel h2::before{
+  display:none;
+}
+
+.tit_wrap p::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    background-image: url(../img/stripe_c01.png);
+    right: -6rem;
+    bottom: 8rem;
+    z-index: -1;
+
+}
+.hero .img_wrap{
+  left: 6.6rem;
+}
+
+.tit_wrap .hero_btn{
+    margin-top: 2rem;
+} 
+ 
+   .hero .tit_wrap{
+    order: 1;
+    text-align: center;
+   }
+
+
+}
+@media screen and (max-width:619px) {
+
+    .card3,.card2{
+        display: none;
+    }
+    header .rel,
+    .hero .rel
+    {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 100%;
+    }
+   
+    
+} 
+@media screen and (max-width:470px) {
+.card_wrap{
+    position: absolute;
+    justify-content: center;
+   left: calc(50% - 10.5rem);
+   top:calc(50% - 10rem);
+
+
+}
+header .rel,
+.rel{
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+header rel nav{
+display: none;
+
+
+}
+
+.hero .rel .tit_wrap{
+margin-top: 4.7rem;
+    bottom: calc(50% - 60rem);
+
+}
+
+
+.hero .rel .tit_wrap h2 {
+    font-size: 2.2rem;
+}
+.rel h2::before {
+
+display: none;}
+
+
+.hero .rel .tit_wrap p {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+}
+.hero_btn{
+    margin:3rem;
+}
+
+
 }
